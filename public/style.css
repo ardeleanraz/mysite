@@ -1,0 +1,20 @@
+body {
+    background-color: dimgrey;
+
+}
+
+.content{
+    position: absolute;
+     top:40%;
+    left:25%;
+
+}
+
+
+.dreapta-jos {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
+
