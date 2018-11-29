@@ -3,12 +3,10 @@ body {
 
 }
 
-.text{
+.content{
     position: absolute;
-     top:40%;
+     top:50%;
     left:30%;
-    width: 1500px;
-    height: 1500px;
 
 }
 

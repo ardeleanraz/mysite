@@ -18,7 +18,6 @@ class Text extends React.Component {
         });
     };
 
-
     onClickBack = () => {
         this.setState({
             tab: 'PageOne'
@@ -26,17 +25,30 @@ class Text extends React.Component {
     };
 
 
-
     render() {
 
         if (this.state.tab === 'PageOne') {
-            return <div>
 
-                <button onClick={this.onClick}>PageTwo</button>
-            </div>
+            return (
+                <div>
+                    <App/>
+                    <div className="  ui huge breadcrumb">
+                        <a onClick={this.onClick} style={{color: 'darkgrey'}} className="section">Home</a>
+                        <i className="right chevron icon divider"> </i>
+                        <a style={{color: 'darkgrey'}} className=" section">Registration</a>
+                        <i className="right chevron icon divider"> </i>
+                        <a style={{color: 'darkgrey'}} className=" section">Personal Information</a>
+                        <i className="right chevron icon divider"> </i>
+                        <a style={{color: 'darkgrey'}} className=" section">Registration</a>
+
+                    </div>
+                </div>
+            )
+
+
         } else {
             return <div>
-                <button  onClick={this.onClickBack}> PageOne </button>
+                <button onClick={this.onClickBack}> PageOne</button>
             </div>
 
         }
