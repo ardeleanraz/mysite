@@ -1,6 +1,9 @@
 import React from 'react';
 
 
-var Comment = React.createClass({
-    edit
-})
+const App= () => {
+    return <div>PageOne</div>
+};
+
+
+export default App;

@@ -3,10 +3,12 @@ body {
 
 }
 
-.content{
+.text{
     position: absolute;
      top:40%;
-    left:25%;
+    left:30%;
+    width: 1500px;
+    height: 1500px;
 
 }
 
@@ -18,3 +20,8 @@ body {
 }
 
 
+.tab{
+    position:absolute;
+
+
+}
