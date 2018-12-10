@@ -16,15 +16,21 @@ class Text extends React.Component {
         }
     }
 
+    goToContact = () =>{
+        this.setState({
+            tab:'Contact'
+        })
+    };
 
-    onClick = () => {
+
+    goToAbout = () => {
         this.setState({
             tab: 'AboutMe'
 
         });
     };
 
-    onClickBack = () => {
+    goToMenu = () => {
         this.setState({
             tab: 'Home'
 
@@ -41,9 +47,9 @@ class Text extends React.Component {
                     <div className="  ui huge breadcrumb">
                         <a style={{color: 'darkgrey'}} className="section">Home</a>
                         <i className="right chevron icon divider"/>
-                        <a onClick={this.onClick} style={{color: 'darkgrey'}} className=" section">About me</a>
+                        <a onClick={this.goToAbout} style={{color: 'darkgrey'}} className=" section">About me</a>
                         <i className="right chevron icon divider"/>
-                        <a style={{color: 'darkgrey'}} className=" section">Contact</a>
+                        <a style={{color: 'darkgrey'}} className="section">Contact</a>
                         <div className="content">
                             <h1 style={{color: 'white'}}>Ardelean Razvan Vasile</h1>
                         </div>
@@ -51,19 +57,41 @@ class Text extends React.Component {
                     </div>
                 </div>
 
-            )
-
-
-        } else {
-            return <div className="ui huge breadcrumb">
-                <a onClick={this.onClickBack} style={{color: 'darkgrey'}} className="section"> Home</a>
-                <About/>
-            </div>
+            );
 
 
         }
+
+        if (this.state.tab === 'AboutMe') {
+
+                    return <div className="ui huge breadcrumb">
+                        <a onClick={this.goToMenu} style={{color: 'darkgrey'}} className="section"> Menu</a>
+                        <About/>
+                    </div>
+
+
+                }
+
+
+
+
+
+
+
+             else {
+                return <div className="ui huge breadcrumb">
+                    <a onClick={this.goToMenu} style={{color: 'darkgrey'}} className="section"> Home</a>
+
+                </div>
+
+
+            }
+        }
     }
-}
+
+
+
+
 
 
 export default Text;

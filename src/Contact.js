@@ -8,5 +8,3 @@ import About from "./About";
 //Create a react component
 
 
-
-
