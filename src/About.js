@@ -1,6 +1,6 @@
 // Import the React and ReactDOM libraries
 import React from 'react';
-import './App.css'
+import './css/about.css'
 import Button from "./Button";
 
 
@@ -12,7 +12,9 @@ const About = () => {
         <h3>I started the faculty of construction,</h3>
         <h3>and after 2 years
         I left because it was not what I liked,</h3>
-        then my brother began to teach me programming.</h3>
+        then my brother began to teach me programming.</h3>;
+
+
 
 
 

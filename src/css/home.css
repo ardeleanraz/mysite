@@ -1,0 +1,42 @@
+body {
+    background-image:url("/mysite/public/road1.jpg");
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 2px 2px black;
+}
+
+.tabu{
+    position:absolute;
+    top:90%;
+}
+
+
+.content{
+    position: absolute;
+    top:50%;
+    left:30%;
+
+}
+
+.razvan_photo {
+    width: 200px;
+    position:absolute;
+    left:42%;
+    top:13%;
+    border-radius: 70px;
+    box-shadow: 10px 10px black;
+
+
+}
+
+
+.dreapta-jos {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
