@@ -7,21 +7,72 @@ import About from "./About";
 
 //Create a react component
 
-const Contact = () => {
-    const contactMe = <h3><h1 style={{color:'darkgrey'}}> CONTACT</h1>40 756 799 721 <h3>ardeleanrazvan111@yahoo.com </h3> </h3>
+class Cv extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            tab: 'AboutMe'
+        }
+    }
+
+    goToCv = () => {
+        this.setState({
+            tab: 'CV'
+
+        });
+    };
+
+    goToMenu = () => {
+        this.setState({
+            tab: 'AboutMe'
+
+        })
+    };
 
 
+    render() {
+
+        if (this.state.tab === 'AboutMe') {
+
+            return (
+                <div>
+                    <div className="cv">
+                        <div onClick={this.goToCv} className="ui huge animated button" tabIndex="0">
+                            <div className="visible content">Check my Cv</div>
+                            <div className="hidden content">
+                                <i className="left arrow icon"> </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
 
 
-return (
+        }
+        if (this.state.tab === 'CV') {
+            return (
+                <div>
+                    <div className="cv">
+                        <div onClick={this.goToMenu} className="ui huge animated button" tabIndex="0">
+                            <div className="visible content">Check my Cv</div>
+                            <div className="hidden content">
+                                <i className="left arrow icon"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <About/>
+                    </div>
+                </div>
 
-        <div>
-            <div className="contact">
-                {contactMe}
-            </div>
-            <Button/>
-        </div>
-    );
-};
+            )
+        }
 
-export default Contact;
+
+    }
+}
+
+
+export default Cv;
+
+

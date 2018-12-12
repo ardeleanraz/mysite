@@ -11,13 +11,13 @@ const Button = () => {
     </a>;
 
 
-    return (
 
-        <div>
-            <div className="dreapta-jos">
-                {gitbutton}
-                {linkedin}
-            </div>
+
+    return (
+        <div className="dreapta-jos">
+            {gitbutton}
+            {linkedin}
+
         </div>
 
 

@@ -1,5 +1,5 @@
 body {
-    background-image:url("/mysite/public/road1.jpg");
+    background-image: url("/mysite/public/road1.jpg");
 
 }
 
@@ -9,24 +9,24 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
-.tabu{
-    position:absolute;
-    top:90%;
+.text {
+    position: absolute;
+    top: 0%;
 }
 
 
-.content{
+.content {
     position: absolute;
-    top:50%;
-    left:30%;
+    top: 50%;
+    left: 30%;
 
 }
 
 .razvan_photo {
     width: 200px;
-    position:absolute;
-    left:42%;
-    top:13%;
+    position: absolute;
+    left: 42%;
+    top: 13%;
     border-radius: 70px;
     box-shadow: 10px 10px black;
 
@@ -35,8 +35,25 @@ h1 {
 
 
 .dreapta-jos {
-  position: absolute;
-  top: 90%;
-  left: 90%;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+}
+
+
+.cv {
+    position: absolute;
+    top: 0%;
+    left: 6%;
+}
+
+.skill {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    animation: mymove 5s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 

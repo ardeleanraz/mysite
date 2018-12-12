@@ -4,6 +4,7 @@ import './css/home.css'
 import About from "./About";
 import Button from "./Button"
 import Contact from "./Contact"
+import Cv from "./Contact"
 
 
 //Create a react component
@@ -17,18 +18,12 @@ class Text extends React.Component {
     }
 
 
-    goToSkills = () => {
+    goToCv = () => {
         this.setState({
-            tab: 'Skills'
-        })
-    };
+            tab: 'Cv'
 
-    goToContact = () => {
-        this.setState({
-            tab: 'Contact'
-        })
+        });
     };
-
 
     goToAbout = () => {
         this.setState({
@@ -51,17 +46,8 @@ class Text extends React.Component {
 
             return (
                 <div>
-                    <div className='tabu'>
-                        <div className="  ui massive breadcrumb">
-                            <a style={{color: 'red'}} className="section">Home</a>
-                            <i className="right chevron icon divider"/>
-                            <a onClick={this.goToAbout} style={{color: 'darkgrey'}} className=" section">About me</a>
-                            <i className="right chevron icon divider"/>
-                            <a onClick={this.goToSkills} style={{color: 'darkgrey'}} className="section">Skills</a>
-                        </div>
-                    </div>
                     <div className="content">
-                        <h1 style={{color: 'white'}}>Ardelean Razvan Vasile</h1>
+                        <h1 onClick={this.goToAbout} style={{color: 'white'}}>Ardelean Razvan Vasile</h1>
                     </div>
                     <Button/>
                 </div>
@@ -71,36 +57,71 @@ class Text extends React.Component {
 
 
         }
-
         if (this.state.tab === 'AboutMe') {
+            return (
+                <div>
+                    <div className="text">
+                        <div>
+                            <div onClick={this.goToMenu} className="ui huge animated button" tabIndex="0">
+                                <div className="visible content">Home</div>
+                                <div className="hidden content">
+                                    <i className="left arrow icon"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div className="cv">
+                                <div onClick={this.goToCv} className="ui huge animated button" tabIndex="0">
+                                    <div className="visible content">Check my Cv</div>
+                                    <div className="hidden content">
+                                        <i className="left arrow icon"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <About/>
+                    </div>
+                    <div>
+                        <Button/>
+                    </div>
+                </div>
 
-            return <div className="ui massive breadcrumb">
 
-                <a onClick={this.goToMenu} style={{color: 'darkgrey'}} className="section"> Home</a>
-                <i className="right chevron icon divider"/>
-                <a onClick={this.goToAbout} style={{color: 'darkgrey'}} className=" section">About me</a>
-
-                <i className="right chevron icon divider"/>
-                <a onClick={this.goToSkills} style={{color: 'darkgrey'}} className="section">Skills</a>
-                <About/>
-            </div>
-
-
+            )
         }
-        if (this.state.tab === 'Skills') {
-            return <div className="ui massive breadcrumb">
-                <a onClick={this.goToMenu} style={{color: 'darkgrey'}} className="section"> Home</a>
-                <i className="right chevron icon divider"/>
-                <a onClick={this.goToAbout} style={{color: 'darkgrey'}} className=" section">About me</a>
-                <i className="right chevron icon divider"/>
-                <a onClick={this.goToSkills} style={{color: 'darkgrey'}} className="section">Skills</a>
-                <Button/>
-            </div>
+        if (this.state.tab === 'Cv') {
+            return (
+                <div>
+                    <div>
+                        <div className="text">
+                            <div onClick={this.goToMenu} className="ui huge animated button" tabIndex="0">
+                                <div className="visible content">Menu</div>
+                                <div className="hidden content">
+                                    <i className="left arrow icon"> </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div className="cv">
+                                <div onClick={this.goToAbout} className="ui huge animated button" tabIndex="0">
+                                    <div className="visible content">AboutMe</div>
+                                    <div className="hidden content">
+                                        <i className="left arrow icon"> </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
+            )
         }
-
-
     }
 }
 
