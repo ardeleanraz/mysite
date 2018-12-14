@@ -71,18 +71,6 @@ class Text extends React.Component {
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <div className="cv">
-                                <div onClick={this.goToCv} className="ui huge animated button" tabIndex="0">
-                                    <div className="visible content">Check my Cv</div>
-                                    <div className="hidden content">
-                                        <i className="left arrow icon"> </i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
                         <About/>
                     </div>
                     <div>
@@ -107,17 +95,9 @@ class Text extends React.Component {
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <div className="cv">
-                                <div onClick={this.goToAbout} className="ui huge animated button" tabIndex="0">
-                                    <div className="visible content">AboutMe</div>
-                                    <div className="hidden content">
-                                        <i className="left arrow icon"> </i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
+
                 </div>
 
             )

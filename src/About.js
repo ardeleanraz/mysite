@@ -25,6 +25,17 @@ const About = () => {
     </h3>
 
 
+
+    const cv = <a href="https://www.dropbox.com/s/wdyiy2dbw7ji2fb/CV-Razvan-Ardelean.pdf?dl=0">
+        <div className="ui huge animated button" tabIndex="0">
+            <div className="visible content">Check my Cv</div>
+            <div className="hidden content">
+                <i className="left arrow icon"> </i>
+            </div>
+        </div>
+    </a>
+
+
     return (
 
         <div>
@@ -34,6 +45,9 @@ const About = () => {
             <div className="skill">
                 {skills}
             </div>
+        <div className="cv">
+            {cv}
+        </div>
             <Button/>
         </div>
     );
