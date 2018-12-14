@@ -1,12 +1,12 @@
 body {
-    background-image: url("/mysite/public/road1.jpg");
-
+    background-image: url("../images/road1.jpg");
+    background-size: cover;
 }
 
 h1 {
     font-size: 5rem;
     font-family: "Times New Roman", Times, serif;
-    text-shadow: 2px 2px black;
+    text-shadow: 5px 10px black;
 }
 
 .text {
@@ -19,17 +19,6 @@ h1 {
     position: absolute;
     top: 50%;
     left: 30%;
-
-}
-
-.razvan_photo {
-    width: 200px;
-    position: absolute;
-    left: 42%;
-    top: 13%;
-    border-radius: 70px;
-    box-shadow: 10px 10px black;
-
 
 }
 
@@ -47,13 +36,13 @@ h1 {
     left: 6%;
 }
 
+
 .skill {
     position: absolute;
     top: 30%;
     right: 2%;
     animation: mymove 5s infinite;
     font-family: Arial, Helvetica, sans-serif;
-
 
 }
 
